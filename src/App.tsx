@@ -74,8 +74,11 @@ const App = () => {
               <p className="text-success mb-0 ms-4">
                 Total Pass: {tests.filter(({ status }) => status === Status.passed).length}
               </p>
-              <p className="text-danger ms-4">
+              <p className="text-danger mb-0 ms-4">
                 Total Failed: {tests.filter(({ status }) => status === Status.failed).length}
+              </p>
+              <p className="text-white ms-4">
+                Total Running: {tests.filter(({ status }) => status === Status.started).length}
               </p>
 
               {tests.every(({ status }) => [Status.passed, Status.failed].includes(status)) && (
