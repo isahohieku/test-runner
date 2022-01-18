@@ -1,7 +1,7 @@
 import type { ITestCases } from '../../types';
 import generateDummyTest from '../mock-spec';
 
-export const tests: ITestCases[] = [
+export const testCases: ITestCases[] = [
   { description: 'commas are rotated properly', run: generateDummyTest() },
   {
     description: 'exclamation points stand up straight',
